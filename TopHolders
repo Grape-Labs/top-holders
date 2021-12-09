@@ -129,7 +129,7 @@ export default function TopHolders(props: any) {
                 onClick={handleClickOpen}
                 size="small"
                 >
-                <AccountBalanceIcon sx={{mr:1}} /> {name}
+                <AccountBalanceIcon sx={{mr:1}} /> Top 20 {name} Holders
             </Button>
             <BootstrapDialog
                 onClose={handleClose}
