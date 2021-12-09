@@ -1,12 +1,9 @@
 import React, { FC, useCallback } from 'react';
-import { WalletError, WalletNotConnectedError } from '@solana/wallet-adapter-base';
-
 import { styled } from '@mui/material/styles';
 
 import {
   Dialog,
   Button,
-  ButtonGroup,
   Table,
   TableBody,
   TableCell,
@@ -16,9 +13,11 @@ import {
   Skeleton,
   DialogTitle,
   DialogContent,
-  Paper,
-  Typography
 } from '@mui/material';
+
+
+import { PretifyCommaNumber } from '../../components/Tools/PretifyCommaNumber';
+import { MakeLinkableAddress, ValidateAddress } from '../../components/Tools/WalletAddress'; // global key handling
 
 import HelpIcon from '@mui/icons-material/Help';
 import IconButton from '@mui/material/IconButton';
